@@ -1,5 +1,5 @@
 ---
-permalink: /Dns.html
+Main: /index.html
 ---
 # Dns
 Gotta see this. 
