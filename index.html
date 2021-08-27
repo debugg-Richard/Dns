@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dns V2</title>
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="res/bootstrap@5.0.0-alpha2.min.css">
+    <link rel="stylesheet" href="res/chartist.min.css">
+    <link rel="stylesheet" href="Style.css" />
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style type="text/css" media="all">
+       html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+} 
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3 ">
+      <a class="navbar-brand" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
+          <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z" />
+        </svg>
+        
+        Menu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" onclick="
+            window.scroll({
+            top: 150,
+            left: 0,
+            behavior: 'smooth'
+            });
+            ">Home <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="window.scroll({top: 1200, 
+            left: 0,
+            behavior: 'smooth' 
+            });">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Homworks</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Read more
+            </a>
+            <div class="dropdown-menu bg-dark text-warning" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item text-warning" href="#" onclick="
+              window.scroll({
+              top: 1000,
+              left: 0,
+              behavior: 'smooth'
+              });
+              ">Gallery</a>
+              <a class="dropdown-item text-warning" href="#" onclick="
+              window.scroll({
+              top: 1500,
+              left: 0,
+              behavior: 'smooth'
+              });
+              ">Achievements</a>
+              <a class="dropdown-item text-warning" href="#" onclick="window.scroll({
+              top: 2400,
+              left: 0,
+              behavior: 'smooth'
+              });">Contact us</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section
+      class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start w-100">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <img style="position:relative;bottom:40px" class ="p-2" src="logo (1).png" alt="" />
+          <h3 style="position:relative;bottom:35px;font-size:10px"  class ="text-warning">
+              English Medium co-education school, 10+2, Affiliated to C. I. S. C. E
+            </h3>
+             <h1 style="" id="wel">Welcome to<span class="text-warning"> De Nobili School</span></h1>
+            <p style="font-size:12px" class="lead my-4">
+            
+             THE NAME OF OUR SCHOOL DE NOBILI SCHOOL is named after a Jesuit Priest who made history with his new approach to India. Born into a noble Italian Family, Roberto De Nobili entered the Society of Jesus and came to live in Madurai in India in 1606. Here he became the first European to learn Sanskrit and to study the Vedas and the Vedanta. By a combination of great scholarship, love and good manners he gradually overcame the distrust of the Brahmins who suspected him of being a Turk in disguise. Father De Nobili was one of the first Europeans to recognize India’s rich heritage. It was his sincere effort to combine the best of two worlds that makes him a natural patron for our school.
+            </p>
+            <button
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            > 
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-check" viewBox="0 0 16 16">
+              <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+              <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+            </svg> ERP Login
+            </button>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="img/showcase.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Login -->
+    <section class="bg-primary text-light p-5 w-100">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3 mb-md-0">Edustack Login</h3>
+
+          <div class="input-group news-input">
+            <input type="text" class="form-control" placeholder="Email" />
+            <input type ="password" class="form-control " placeholder ="Password">
+            <button class="btn btn-dark btn-lg" type="button">Login</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-5 w-100" data-aos="fade-up">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <img src="pic.png " class="img-fluid" alt="" />
+                </div>
+              
+              </div>
+            </div>
+          </div>
+          <h3>
+            OUR ADMINISTRATOR
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+            </svg>
+          </h3>
+          <div class="col-md" data-aos="fade-left">
+            <div class="card bg-light text-dark">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <img src="pic1.png" class="img-fluid" alt="" />
+                </div>
+                <h2 class="card-title mb-3">Principal</h3>
+                <p class="card-text">
+                  Ms. Tanushree Banerjee
+                </p>
+                <h5><b>
+                  Our objective is to work for the all round development of students.
+                </b></h5>
+                <p style="font-size:10px">
+                  St- Ignatius of Loyola, the Founder of the Society of Jesus, was born in 1491, into a noble Basque family in Northern Spain. His early upbringing was in a court. In 1517, he left his life at the court to enter the army to be a soldier in the service of the Spanish king, Ferdinand. While defending the fortress at Pamplona in 1521, his leg was shattered by a cannon ball. During a prolonged and painful convalescence, for want of ’ romantic books’ at castle, he seriously went through two books that would exert a powerful influence over his mind and heart: ’The Life of Christ,’ and the ’Lives of Saints.’ While reading these books, he experienced an interior transformation that changed his whole life. Inspired by the courageous surrender of the saints to the will of God and to a life of poverty, he decided to forsake his possessions and live the life of an ascetic in search of God.
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md" data-aos="fade-right" >
+            <div class="card bg-light text-dark">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <img src="pic3.png" class="img-fluid" alt="" />
+                </div>
+                <h3 class="card-title mb-3">Vice Principal </h3>
+                <p class="card-text">
+                  Ms. Rosy Sahay
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-5 bg-dark w-100" data-aos="flip-down" >
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center mb-4 text-white">Contact Info</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item bg-dark text-light ">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                </svg>
+                
+
+
+             <span class="fw-bold"> Main Location : </span> Main Rd, Koradih, Jharkhand 828114
+              </li>
+              <li class="list-group-item bg-dark text-light ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                </svg>
+                
+                <span class="fw-bold"> Mob. Number 1 : </span> 7631998029
+              </li>
+              <li class="list-group-item bg-dark text-light ">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                </svg>
+                
+
+
+              <span class="fw-bold"> Mob. Number 2 : </span> <br>76319 98030</br>
+              </li>
+              <li class="list-group-item bg-dark text-light ">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                </svg>
+                
+                <span class="fw-bold">Email : </span> dnssijua1975@gmail.com
+              </li>
+              <li class="list-group-item bg-dark text-light ">
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                 <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+               </svg>
+                <span class="fw-bold">Website : </span> dnssijua.com
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="p-5 bg-light text-dark text-center position-relative w-100">
+      <div class="container">
+        <p style="font-size:15px" class="lead"><b>Copyright &copy; 2021 De Nobili Koradih</b></p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script>
+      AOS.init({
+      offset: 150,
+      duration: 1000,
+      delay: 250,
+      });
+    </script>
+</body>
+</html>
