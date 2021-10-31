@@ -16,6 +16,10 @@
     padding:0;
     overflow-x:hidden;
 } 
+#carouselExampleIndicators{
+  position:relative ;
+  bottom:20px;
+}
     </style>
     
     <script type="text/javascript" charset="utf-8">
@@ -74,12 +78,7 @@ window.addEventListener("DOMContentLoaded", init);
   <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
 </svg></div>
     
-    
-    
-    
-    
-    
-    
+
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3 ">
       <a class="navbar-brand" href="#">
@@ -168,6 +167,41 @@ window.addEventListener("DOMContentLoaded", init);
           <h3 style="position:relative;bottom:35px;font-size:10px"  class ="text-warning">
               English Medium co-education school, 10+2, Affiliated to C. I. S. C. E
             </h3>
+              <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVOz7btldLWs01rSJaRvcfrSWXRCWK-BfXeQ&usqp=CAU" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToUxWce-4uF92IvoKhfjCA6aVdnjFqDwwXpQ&usqp=CAU" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjWNacoY_bcKuTbUBhpJaUDvheCpYlg5XoQA&usqp=CAU" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">
+  
+      
+   </span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">
+      
+    </span>
+  </a>
+</div>
+    
+    
+    
+     
              <h1 style="" id="wel">Welcome to<span class="text-warning"> De Nobili School</span></h1>
             <p style="font-size:12px" class="lead my-4">
             
@@ -206,12 +240,14 @@ window.addEventListener("DOMContentLoaded", init);
               </div>
             </div>
           </div>
+         
           <h3>
             OUR ADMINISTRATOR
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
             </svg>
           </h3>
+        
           <div class="col-md" data-aos="fade-left">
             <div class="card bg-light text-dark">
               <div class="card-body text-center">
@@ -231,6 +267,7 @@ window.addEventListener("DOMContentLoaded", init);
               </div>
             </div>
           </div>
+         
           <div class="col-md" data-aos="fade-right" >
             <div class="card bg-light text-dark">
               <div class="card-body text-center">
@@ -243,7 +280,7 @@ window.addEventListener("DOMContentLoaded", init);
                 </p>
               </div>
             </div>
-          </div>
+        </div>
         </div>
       </div>
     </section>
